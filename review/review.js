@@ -63,25 +63,17 @@ submit.addEventListener("click",function() {
             }else{
                 console.log(reviewCheck(postContent.value))
                 alert('리뷰는 150자의 글자 제한이 있습니다.')
-                // 리뷰 입력 필드 초기화
-                username.value = '';
-                password.value = '';
-                postContent.value = '';
             }
         }else{
             console.log(pwCheck(password.value))
             alert('비밀번호는 6글자 이상이어야 합니다.')
-            // 리뷰 입력 필드 초기화
-            username.value = '';
+            // 비밀번호 입력 필드 초기화
             password.value = '';
-            postContent.value = '';
         }
     } else{
         console.log(idCheck(username.value))
         alert('아이디는 2글자 이상 이어야 합니다.')
-        // 리뷰 입력 필드 초기화
+        // 아이디 입력 필드 초기화
         username.value = '';
-        password.value = '';
-        postContent.value = '';
     }
 });
